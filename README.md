@@ -2,19 +2,11 @@
 
 Run TiddlyWiki 5 via Docker.
 
-Forked from
-[djmaze/tiddlywiki-docker](https://github.com/djmaze/tiddlywiki-docker).
-
+'Borrowed' from 
 The Docker image is available at [m0wer/tiddlywiki - Docker
 Hub](https://hub.docker.com/r/m0wer/tiddlywiki).
 
-## Available Docker Images at DockerHub
-
-Image Name       | Tag        | TiddyWiki Version
------------------|------------|------------------
-m0wer/tiddlywiki | latest     | 5.1.23
-m0wer/tiddlywiki | v[X]       | [X]
-m0wer/tiddlywiki | test       | ?
+Only changed the port to 8090.
 
 ## Prerequisites
 
