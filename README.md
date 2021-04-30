@@ -6,7 +6,7 @@ Run TiddlyWiki 5 via Docker.
 The Docker image is available at [m0wer/tiddlywiki - Docker
 Hub](https://hub.docker.com/r/m0wer/tiddlywiki).
 
-Only changed the port to 8090.
+Experimental. Only changed the port to 8090
 
 ## Prerequisites
 
@@ -15,7 +15,7 @@ Only changed the port to 8090.
 ## Quickstart
 
 ```bash
-docker run -d -p 8090:8090 m0wer/tiddlywiki
+docker run -d -p 8090:8090 joeklee/tiddlywiki-docker
 ```
 
 Now TiddlyWiki should be running on
@@ -27,7 +27,7 @@ The container uses a Docker volume to save the wiki data. In order not
 to lose sight of that, I recommend using a local directory for the volume.
 
 ```bash
-docker run -d -p 8090:8090 -v $(pwd)/.tiddlywiki:/var/lib/tiddlywiki m0wer/tiddlywiki
+docker run -d -p 8090:8090 -v $(pwd)/.tiddlywiki:/var/lib/tiddlywiki joeklee/tiddlywiki-docker
 ```
 
 In this example, the folder `$(pwd)/.tiddlywiki` is used for the data.
