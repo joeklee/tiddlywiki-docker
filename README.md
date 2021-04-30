@@ -15,7 +15,7 @@ Experimental. Only changed the port to 8090
 ## Quickstart
 
 ```bash
-docker run -d -p 8090:8090 joeklee/tiddlywiki-docker
+docker run -d -p 8090:8090 joeklee2docker/tiddlywiki-docker
 ```
 
 Now TiddlyWiki should be running on
@@ -27,7 +27,7 @@ The container uses a Docker volume to save the wiki data. In order not
 to lose sight of that, I recommend using a local directory for the volume.
 
 ```bash
-docker run -d -p 8090:8090 -v $(pwd)/.tiddlywiki:/var/lib/tiddlywiki joeklee/tiddlywiki-docker
+docker run -d -p 8090:8090 -v $(pwd)/.tiddlywiki:/var/lib/tiddlywiki joeklee2docker/tiddlywiki-docker
 ```
 
 In this example, the folder `$(pwd)/.tiddlywiki` is used for the data.
